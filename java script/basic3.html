@@ -1,0 +1,30 @@
+<!--
+    Here we have create a simple core live html interpreter
+-->
+<script>
+function lw(){
+x=document.getElementById("d1");
+// y=x.innerHTML;
+// alert(y);
+z=document.getElementById("d3");
+
+// z.value=x.innerHTML; // or vise versa x.innerHTML=z.value 
+x.innerHTML=z.value; // or vise versa x.innerHTML
+// alert(z.value)
+}
+</script>
+
+<body>
+
+    <div id ="d1"> first div </div>
+
+    <p id ="d2"> this is para </p>
+
+    enter your code <textarea id="d3" onkeyup="lw()"></textarea><br />
+
+    box 1 : <input id="d3" onkeyup="lw()"/>
+    <br />
+    box 2: <input id="d4" />
+    <br />
+    <button onclick="lw()"> click me </button>
+</body>

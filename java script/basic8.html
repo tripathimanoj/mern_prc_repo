@@ -1,0 +1,34 @@
+<script>
+    function lw(){
+        // var p = document.getElementById("x2");
+        // p.value ="807743120";
+        var a=document.getElementsByTagName("input"); // here a will bea list or array or collection
+        //alert(a.length)
+
+        //alert(a[0])
+
+        /*a[0].value = "manoj";
+        a[1].value = "harry";
+        a[2].value = "rahul";
+        a[3].value = "neel"; */
+
+        var db=["vimal","tom","pop","krish"]
+
+        for (count =0; count <= db.length - 1 ; count++) {
+            a[count].value = db[count];
+        }
+    }
+</script>
+
+
+<body>
+Name1 <input type="text"  />
+<br />
+Name2 <input type="text"  />
+<br />
+Name3 <input type="text" />
+<br />
+Name3 <input type="text" />
+<br />
+<button onclick="lw()" > click me</button>
+</body>
